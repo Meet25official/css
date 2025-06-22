@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    
+    background-color: darkgray;
+}
+nav{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    gap: 10px;
+}
+/* ------- */
+.logo{
+    width: 60px;
+    text-align: center;
+    margin-left: 5px;
+}
+.logo img{
+    width: 65%;
+}
+/* ------- */
+.menu{
+    height: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+ul li{
+    padding: 18px 5px 18px 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+ul li:hover{
+    background-color: #04AA6D;
+}
+/* ------------------------------- */
+.search{
+    width: 18%;
+    position: relative;
+}
+.search input{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(204, 202, 202);
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+::placeholder{
+    color: rgb(100, 95, 95);
+    font-style: italic;
+}
+.search input:focus{
+    outline: 3px solid #04AA6D;
+}
+.search span{
+    position: absolute;
+    right: -7px;
+    top: calc(50% - 17px);
+    border-radius: 50%;
+    padding: 6px;
+}
+.search span:hover{
+    background-color: rgb(216, 215, 215);
+    cursor: pointer;
+}
+/* ------------------------------- */
+
+.dark-mode{
+    margin-left: 8px;
+}
+.dark-mode span{
+    transform: rotate(180deg);
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.dark-mode span:hover{
+    background-color: rgb(218, 215, 215);
+}
+
+
+/* ---------------------------- */
+.effect{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.effect span{
+    font-size: 16px;
+}
+.effect b{
+    display: inline-block;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+b main{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.effect b:hover{
+    background-color:#d7e2de;
+}
+
+/* ---------------------------- */
+.btn{
+    background-color: #bdddd1;
+    border-radius: 20px;
+}
+.btn button{
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 20px;
+}
+.btn button:first-child{
+    color: white;
+    background-color: #04AA6D;
+    border-radius: 20px;
+    position: relative;
+}
+.btn button:last-child{
+    margin-left: -20px;
+    border-radius: 0px 20px 20px 0px;
+}
+.btn button:hover{
+    background-color: #059b64;
+    color: white;
+}
+
+/* <div class="btn">
+            <button>Sign up</button>
+            <button>Log in</button>
+        </div> */
